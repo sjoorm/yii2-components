@@ -6,12 +6,12 @@
  * oDesk: https://www.odesk.com/users/%7E01ad7ed1a6ade4e02e
  * Date: 13.11.14
  */
-namespace common\widgets;
+namespace sjoorm\yii\widgets;
 use sjoorm\yii\components\base\PageView;
 use yii\base\Widget;
 /**
  * Class JsData helps to transfer data from PHP to JS code
- * @package common\widgets
+ * @package sjoorm\yii\widgets
  */
 class JsData extends Widget {
 

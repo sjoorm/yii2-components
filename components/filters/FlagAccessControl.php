@@ -17,7 +17,7 @@ use yii\filters\AccessControl;
 class FlagAccessControl extends AccessControl {
 
     /** @inheritdoc */
-    public $ruleConfig = ['class' => 'common\components\filters\FlagAccessRule'];
+    public $ruleConfig = ['class' => 'sjoorm\yii\components\filters\FlagAccessRule'];
 
     /** @inheritdoc */
     public function beforeAction($action) {
