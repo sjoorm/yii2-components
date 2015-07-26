@@ -6,10 +6,10 @@
  * @oDesk: https://www.odesk.com/users/%7E01ad7ed1a6ade4e02e
  * @date: 26.02.15
  */
-namespace common\components\behaviors;
+namespace sjoorm\yii\components\behaviors;
 /**
  * Trait HashIdBehavior implements ID-hashing actions for model's "id" column
- * @package common\components\behaviors
+ * @package sjoorm\yii\components\behaviors
  * @property integer $id
  * @property integer $hashId
  * @method static \yii\db\ActiveRecord findOne(mixed $id)
