@@ -31,6 +31,5 @@ phpunit.phar
 
 /temp
 /node_modules
-/assets
 
 composer.lock
