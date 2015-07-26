@@ -9,7 +9,7 @@ namespace sjoorm\yii\extensions;
 use yii\base\Component;
 /**
  * Class XHProf
- * @package common\extensions
+ * @package sjoorm\yii\extensions
  */
 class XHProf extends Component {
 
