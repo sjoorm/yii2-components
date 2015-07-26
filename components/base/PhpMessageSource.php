@@ -6,11 +6,12 @@
  * oDesk: https://www.odesk.com/users/%7E01ad7ed1a6ade4e02e
  * Date: 13.11.14
  */
-namespace common\components\base;
+namespace sjoorm\yii\components\base;
 /**
  * Class PhpMessageSource adds necessary functionality to base class
+ * to extract all messages
  * for JsData widget
- * @package common\components\base
+ * @package sjoorm\yii\components\base
  */
 class PhpMessageSource extends \yii\i18n\PhpMessageSource {
 
