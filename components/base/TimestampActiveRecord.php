@@ -6,14 +6,14 @@
  * oDesk: https://www.odesk.com/users/%7E01ad7ed1a6ade4e02e
  * Date: 03.11.14
  */
-namespace common\components\base;
+namespace sjoorm\yii\components\base;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\db\Expression;
 /**
  * Class TimestampActiveRecord implements TimestampBehavior usage
  * and statistics method for MySQL table model
- * @package common\components\base
+ * @package sjoorm\yii\components\base
  *
  * @method void touch(string $attribute) TimestampBehavior->touch()
  */
