@@ -1,0 +1,27 @@
+{
+  "name": "sjoorm/yii2-components",
+  "version": "0.1.0",
+  "description": "Custom Yii2 components, developed for various needs",
+  "keywords": ["yii2", "components", "custom", "helpers", "base"],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/sjoorm/yii2-components/issues",
+    "source": "https://github.com/sjoorm/yii2-components"
+  },
+  "authors": [
+    {
+      "name": "Alexey Tishchenko",
+      "email": "alexey@atishchenko.com",
+      "homepage": "https://www.atishchenko.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": ">=2.0.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "sjoorm\\yii\\": ""
+    }
+  }
+}
