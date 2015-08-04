@@ -6,13 +6,14 @@
  * @oDesk: https://www.odesk.com/users/%7E01ad7ed1a6ade4e02e
  * @date: 04.08.15
  */
+namespace sjoorm\yii\widgets;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveField;
 /**
  * Class HorizontalActiveField implements ActiveField widget used by horizontal
  * bootstrap form (form classes = "form form-horizontal"
- * @package crm\widgets
+ * @package sjoorm\yii\widgets
  */
 class HorizontalActiveField extends ActiveField {
 
