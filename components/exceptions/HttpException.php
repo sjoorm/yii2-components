@@ -15,6 +15,8 @@ class HttpException extends \yii\web\HttpException {
 
     /** @inheritdoc */
     public function __construct($status, $message = null, $code = 0, \Exception $previous = null) {
+        $this->statusCode = $status;
+
         if(empty($message)) {
             switch($status) {
                 case 403:
@@ -24,9 +26,11 @@ class HttpException extends \yii\web\HttpException {
                     $message = \Yii::t('yii', 'No results found.');
                     break;
                 default:
+                    $message = $this->getName();
                     break;
             }
         }
-        \yii\web\HttpException::__construct($status, $message, $code, $previous);
+
+        parent::__construct($status, $message, $code, $previous);
     }
 }
