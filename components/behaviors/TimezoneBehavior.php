@@ -32,6 +32,20 @@ trait TimezoneBehavior {
     }
 
     /**
+     * Formats DateTime object via Yii::$app->formatter
+     * @param \DateTime $dateTime
+     * @return string
+     */
+    private function format($dateTime) {
+        $oldTimeZone = \Yii::$app->formatter->timeZone;
+        \Yii::$app->formatter->timeZone = $dateTime->getTimezone()->getName();
+        $result = \Yii::$app->formatter->asDatetime($dateTime);
+        \Yii::$app->formatter->timeZone = $oldTimeZone;
+
+        return $result;
+    }
+
+    /**
      * @param integer|string|\DateTime $source
      * @param boolean|true $format
      * @return \DateTime|string
@@ -47,7 +61,13 @@ trait TimezoneBehavior {
         }
         $dateTime->setTimezone($this->_timeZoneUTC);
 
-        return $format ? \Yii::$app->formatter->asDatetime($dateTime) : $dateTime;
+        if($format) {
+            $result = $this->format($dateTime);
+        } else {
+            $result = $dateTime;
+        }
+
+        return $result;
     }
 
     /**
@@ -66,6 +86,12 @@ trait TimezoneBehavior {
         }
         $dateTime->setTimezone($this->_timeZoneUser);
 
-        return $format ? \Yii::$app->formatter->asDatetime($dateTime) : $dateTime;
+        if($format) {
+            $result = $this->format($dateTime);
+        } else {
+            $result = $dateTime;
+        }
+
+        return $result;
     }
 }
