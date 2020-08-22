@@ -8,7 +8,7 @@
  */
 namespace sjoorm\yii\components\helpers;
 use yii\base\InvalidConfigException;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\helpers\Html;
 
 /**
@@ -21,7 +21,7 @@ use yii\helpers\Html;
  * @property string $asLink returns phone number as HTML dial <a> tag (skype: by default)
  * @property string $asHtml returns phone number as HTML <span> tag (bootstrap label by default)
  */
-class PhoneNumber extends Object {
+class PhoneNumber extends BaseObject {
 
     /** @var array list of available country dial codes [ISO => 123]  */
     private static $_codes = [
